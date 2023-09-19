@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Log in</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar_left">
+            <div class="logo">
+                <ol class="breadcrumb">
+                    <div class="image-container">
+                        <a href="../../index.html"> <img src="../assets/img/logo/SVG/slimArtboard 6.svg" alt="Slim Together"></a>
+                       
+                    </div>
+
+
+
+
+
+
+
+
+                </ol>
+
+            </div>
+
+        </div>
+        <div class="navbar_right">
+            
+            <div class="language">
+                <a href="docloginfr.html">fr</a>
+                <a href="docloginar.html">ع</a>
+
+            </div>
+
+        </div>
+    </div>
+    
+   
+<div class="container" id="container">
+    
+	<div class="form-container sign-up-container">
+		<form action="#">
+            <h1>Sign in</h1>
+			
+			<input type="text" placeholder="Name" />
+			<input type="email" placeholder="Email" />
+            <a href="#">Forgot your password?</a>
+			
+			<button>Sign in</button>
+            <a href="../Doctor/doctor-dashboard.html">Doctor dashboard test</a>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign in</h1>
+			
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<a href="#">Forgot your password?</a>
+			<button>Sign In</button>
+            <a href="../Patient/patient-dashboard.html">Patient dashboard test</a>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Hello Doc!</h1>
+				<p>please login with your personal info</p>
+				<button class="ghost" id="signIn">I am a patient</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello!</h1>
+				<p>please login with your personal info and start your healthy journey with us</p>
+				<button class="ghost" id="signUp">I am the DOCTOR!!</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+<script >
+    const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+</script>
+
+</html>

@@ -212,7 +212,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="chat.html" target="_blank">
+                                        <a href="chat.html">
                                             <i class="fas fa-comments"></i>
                                             <span>Message</span>
                                             <small class="unread-msg">23</small>
@@ -231,7 +231,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="../login form/loginen.html">
+                                        <a href="../login form/docloginen.html">
                                             <i class="fas fa-sign-out-alt"></i>
                                             <span>Déconnexion</span>
                                         </a>
@@ -323,44 +323,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <div class="card schedule-widget mb-0">
-                                                            <div class="tab-content schedule-cont">
-                                                                <div id="slot_monday" class="tab-pane fade show active">
-                                                                    <h4
-                                                                        class="card-title d-flex justify-content-between">
-                                                                        <span>Plages horaires</span>
-                                                                        <a class="edit-link" data-toggle="modal"
-                                                                            href="#edit_time_slot_sport"><i
-                                                                                class="fa fa-edit mr-1"></i>Modifier</a>
-                                                                    </h4>
-                                                                    <small class="form-text text-muted">Note : L'horaire
-                                                                        doit correspondre à l'ordre précédent des
-                                                                        exercices</small>
-                                                                    <!-- Liste des plages horaires -->
-                                                                    <div class="doc-times">
-                                                                        <div class="doc-slot-list">
-                                                                            22:00 - 23:00
-                                                                            <a href="javascript:void(0)"
-                                                                                class="delete_schedule">
-                                                                                <i class="fa fa-times"></i>
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="doc-slot-list">
-                                                                            08:00 - 08:30
-                                                                            <a href="javascript:void(0)"
-                                                                                class="delete_schedule">
-                                                                                <i class="fa fa-times"></i>
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- /Liste des plages horaires -->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -370,8 +333,16 @@
                                         <h4 class="card-title">Horaires complets de la respiration <span
                                                 class="text-danger">*</span></h4>
                                         <div class="profile-box">
+                                            <div class="col-12 ">
+                                                <p>Cette vidéo fournira une démonstration concise de la technique de respiration correcte.</p>
+                                                <video id="breathing-video" controls>
+                                                    <source src="your-video-source.mp4" type="video/mp4">
+                                                    Your browser does not support the video tag.
+                                                </video>
+                                                    
+                                            </div>
                                             <div class="row">
-                                                <div class="col-12 col-md-5">
+                                                <div class="col-12">
                                                     <div class="form-group">
                                                         <label>Durée de la séance de respiration</label>
                                                         <select class="select form-control">
@@ -383,50 +354,9 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-7">
-                                                    <div class="upload-img">
-                                                        <div class="change-photo-btn">
-                                                            <span><i class="fa fa-upload"></i>Télécharger une vidéo de
-                                                                respiration</span>
-                                                            <input type="file" class="upload">
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                
                                             </div>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="card schedule-widget mb-0">
-                                                        <div class="tab-content schedule-cont">
-                                                            <div id="slot_monday" class="tab-pane fade show active">
-                                                                <h4 class="card-title d-flex justify-content-between">
-                                                                    <span>Plages horaires</span>
-                                                                    <a class="edit-link" data-toggle="modal"
-                                                                        href="#edit_time_slot"><i
-                                                                            class="fa fa-edit mr-1"></i>Modifier</a>
-                                                                </h4>
-                                                                <!-- Liste des plages horaires -->
-                                                                <div class="doc-times">
-                                                                    <div class="doc-slot-list">
-                                                                        22:00 - 23:00
-                                                                        <a href="javascript:void(0)"
-                                                                            class="delete_schedule">
-                                                                            <i class="fa fa-times"></i>
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="doc-slot-list">
-                                                                        08:00 - 08:30
-                                                                        <a href="javascript:void(0)"
-                                                                            class="delete_schedule">
-                                                                            <i class="fa fa-times"></i>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- /Liste des plages horaires -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -473,13 +403,7 @@
                                                                     <input type="time" class="form-control">
                                                                 </div>
                                                             </div>
-                                                            <div class="col-12 col-md-6 col-lg-4">
-                                                                <div class="form-group">
-                                                                    <label>Calories <span
-                                                                            class="text-danger">*</span></label>
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </div>
+                                                            
                                                             <div class="form-group">
                                                                 <label>Ingrédients du petit-déjeuner <span
                                                                         class="text-danger">*</span></label>
@@ -511,13 +435,7 @@
                                                                     <input type="time" class="form-control">
                                                                 </div>
                                                             </div>
-                                                            <div class="col-12 col-md-6 col-lg-4">
-                                                                <div class="form-group">
-                                                                    <label>Calories <span
-                                                                            class="text-danger">*</span></label>
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </div>
+                                                            
                                                             <div class="form-group">
                                                                 <label>Ingrédients du déjeuner <span
                                                                         class="text-danger">*</span></label>
@@ -549,13 +467,7 @@
                                                                     <input type="time" class="form-control">
                                                                 </div>
                                                             </div>
-                                                            <div class="col-12 col-md-6 col-lg-4">
-                                                                <div class="form-group">
-                                                                    <label>Calories <span
-                                                                            class="text-danger">*</span></label>
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </div>
+                                                            
                                                             <div class="form-group">
                                                                 <label>Ingrédients du dîner <span
                                                                         class="text-danger">*</span></label>
@@ -577,32 +489,72 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card services-card">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Compléments nutritionnels et fruits</h4>
+                                    
+                                    
+                                </div>
+                                <div class="card services-card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Compléments nutritionnels</h4>
+                                        
+                                          
+                                            <div class="col-12">
+                                             <div class="form-group">
+                                                <label for="supplement1">Supplement 1</label>
+                                                                 <div>
+                                                                        <label for="supplement1-yes">Yes</label>
+                                                                        <input type="radio" id="supplement1-yes" name="supplement1" value="yes">
+                                                                        <label for="supplement1-no">No</label>
+                                                                       <input type="radio" id="supplement1-no" name="supplement1" value="no">
+                                                                  </div>
+                                                                  <label for="supplement1-time">Time:</label>
+                                                                 <input type="text" class="input-tags form-control" id="supplement1-time" placeholder="If yes at what time did you take it?" name="supplement1-time">
+                                                
+                                             </div>
+                                            
                                             <div class="form-group">
-                                                <label>Compléments nutritionnels</label>
-                                                <input type="text" data-role="tagsinput" class="input-tags form-control"
-                                                    placeholder="Entrez des compléments nutritionnels" name="services"
-                                                    value="Protéines" id="services">
-                                                <small class="form-text text-muted">Note : Tapez et appuyez sur Entrée
-                                                    pour ajouter de nouveaux compléments nutritionnels</small>
+                                                <label for="supplement2">Supplement 2</label>
+                                                                 <div>
+                                                                        <label for="supplement1-yes">Yes</label>
+                                                                        <input type="radio" id="supplement2-yes" name="supplement2" value="yes">
+                                                                        <label for="supplement1-no">No</label>
+                                                                       <input type="radio" id="supplement2-no" name="supplement2" value="no">
+                                                                  </div>
+                                                                  <label for="supplement1-time">Time:</label>
+                                                                 <input type="text" class="input-tags form-control" id="supplement2-time" placeholder="If yes at what time did you take it?" name="supplement2-time">
+                                                
+                                               
                                             </div>
-                                            <div class="form-group mb-0">
-                                                <label>Fruits</label>
-                                                <input class="input-tags form-control" type="text" data-role="tagsinput"
-                                                    placeholder="Entrez le nom des fruits" name="specialist"
-                                                    value="2 pommes, demi-melon" id="specialist">
-                                                <small class="form-text text-muted">Note : Tapez et appuyez sur Entrée
-                                                    pour ajouter de nouveaux fruits</small>
+                                            <div class="form-group">
+                                                <label for="supplement3">Supplement 3</label>
+                                                                 <div>
+                                                                        <label for="supplement1-yes">Yes</label>
+                                                                        <input type="radio" id="supplement3-yes" name="supplement3" value="yes">
+                                                                        <label for="supplement1-no">No</label>
+                                                                       <input type="radio" id="supplement3-no" name="supplement3" value="no">
+                                                                  </div>
+                                                                  <label for="supplement1-time">Time:</label>
+                                                                 <input type="text" class="input-tags form-control" id="supplement3-time" placeholder="If yes at what time did you take it?" name="supplement3-time">
+                                                
+                                               
                                             </div>
                                         </div>
+                                        
                                     </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <label>Cas de jeûne nocturne</label>
-                                            <input type="text" class="form-control" value="">
-                                        </div>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label>Cas de jeûne nocturne</label>
+    
+                                                         <div>
+                                                                <label for="supplement1-yes">Oui</label>
+                                                                <input type="radio"  name="supplement2" value="yes">
+                                                                <label for="supplement1-no">Non</label>
+                                                               <input type="radio"  name="supplement2" value="no">
+                                                          </div>
+                                                          
+                                        
+                                       
                                     </div>
                                 </div>
                                 <div class="submit-section submit-btn-bottom">
@@ -617,138 +569,7 @@
     </div>
     <!-- /Page Content -->
 
-    <!-- Edit Time Slot Modal -->
-    <div class="modal fade custom-modal" id="edit_time_slot">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Edit Time Sessions</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="hours-info">
-                            <div class="row form-row hours-cont">
-                                <div class="col-12 col-md-10">
-                                    <div class="row form-row">
-                                        <div class="col-12 col-md-6">
-                                            <div class="form-group">
-                                                <label>Start Time</label>
-                                                <input type="text" class="form-control" value="22:00 pm">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-6">
-                                            <div class="form-group">
-                                                <label>End Time</label>
-                                                <input type="text" class="form-control" value="23:00 pm">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row form-row hours-cont">
-                                <div class="col-12 col-md-10">
-                                    <div class="row form-row">
-                                        <div class="col-12 col-md-6">
-                                            <div class="form-group">
-                                                <label>Start Time</label>
-                                                <input type="text" class="form-control" value="08:00 am">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-6">
-                                            <div class="form-group">
-                                                <label>End Time</label>
-                                                <input type="text" class="form-control" value="08:30 am">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-2"><label class="d-md-block d-sm-none d-none">&nbsp;</label><a
-                                        href="#" class="btn btn-danger trash"><i class="far fa-trash-alt"></i></a></div>
-                            </div>
-                        </div>
-                        <div class="add-more mb-3">
-                            <a href="javascript:void(0);" class="add-hours"><i class="fa fa-plus-circle"></i> Add
-                                More</a>
-                        </div>
-                        <div class="submit-section text-center">
-                            <button type="submit" class="btn btn-primary submit-btn">Save Changes</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Edit Time Slot Modal -->
-    <!-- Edit Time Slot Sport Modal -->
-    <div class="modal fade custom-modal" id="edit_time_slot_sport">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Edit Time Sessions</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="hours-info">
-                            <div class="row form-row hours-cont">
-                                <div class="col-12 col-md-10">
-                                    <div class="row form-row">
-                                        <div class="col-12 col-md-6">
-                                            <div class="form-group">
-                                                <label>Start Time</label>
-                                                <input type="text" class="form-control" value="22:00 pm">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-6">
-                                            <div class="form-group">
-                                                <label>End Time</label>
-                                                <input type="text" class="form-control" value="23:00 pm">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row form-row hours-cont">
-                                <div class="col-12 col-md-10">
-                                    <div class="row form-row">
-                                        <div class="col-12 col-md-6">
-                                            <div class="form-group">
-                                                <label>Start Time</label>
-                                                <input type="text" class="form-control" value="08:00 am">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-6">
-                                            <div class="form-group">
-                                                <label>End Time</label>
-                                                <input type="text" class="form-control" value="08:30 am">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-2"><label class="d-md-block d-sm-none d-none">&nbsp;</label><a
-                                        href="#" class="btn btn-danger trash"><i class="far fa-trash-alt"></i></a></div>
-                            </div>
-                        </div>
-                        <div class="add-more mb-3">
-                            <a href="javascript:void(0);" class="add-hours"><i class="fa fa-plus-circle"></i> Add
-                                More</a>
-                        </div>
-                        <div class="submit-section text-center">
-                            <button type="submit" class="btn btn-primary submit-btn">Save Changes</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Edit Time Slot Sport Modal -->
+    
 
 
     <!-- Footer -->

@@ -204,24 +204,8 @@
         transition: all 0.3s ease-in-out;
     }
     
-    .nav_item a:before {
-        content: '';
-        background: var(--main-color);
-        display: block;
-        position: absolute;
-        bottom: -3px;
-        left: 0;
-        width: 0;
-        height: 4px;
-        transition: var(--main-transition);
-    }
-    
     .nav_item a:hover {
         background-position: 0;
-    }
-    
-    .nav_item a:hover::before {
-        width: 100%;
     }
     
     .navbar {

@@ -49,6 +49,8 @@ Version      : 1.0
     /*-----------------
 	1. General
 -----------------------*/
+
+
     
     @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900');
     @font-face {
@@ -112,17 +114,61 @@ Version      : 1.0
         font-size: 0.9375rem;
     }
     
+    ::-webkit-scrollbar {
+        width: 18px;
+    }
+    
+     ::-webkit-scrollbar-track {
+        background-color: #f6f6f6;
+        box-shadow: 0 0 10px #ddd inset;
+    }
+    
+     ::-webkit-scrollbar-thumb {
+        background-color: var(--main-color);
+        border-radius: 5px;
+    }
+    
+     ::-webkit-scrollbar-thumb:hover {
+        background-color: var(--main-color-alt);
+    }
+
+    .search-bar {
+        margin-left: auto;
+        float: right;
+        display: flex;
+        margin-top: 5px;
+    }
+
+    .search-input {
+        padding: 5px;
+        border: 1px solid var(--main-color);
+        border-radius: 5px;
+        outline: none;
+    }
+
+    .search-button {
+        background-color: var(--main-color);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+
     .main-footer {
-        position: fixed;
+        position:fixed;
         bottom: 0;
         left: 0;
         right: 0;
         padding: 2px auto;
         text-align: center;
-        
         background-color: #f0f0f0;
-      
     }
+
+
+
+
     
     h1,
     h2,
@@ -6332,7 +6378,29 @@ Version      : 1.0
     /*-----------------
 	30. Profile Settings
 -----------------------*/
+
+#breathing-video {
+    border-radius: 10px;
+   
+}
+
+
+
+
+.form-group .illustrative-pic{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.form-group .illustrative-pic img{
     
+    height: 400px;
+    border-radius: 9px;
+    
+    
+}
+
+
     .prof_stt_title {
         font-size: 20px;
         font-weight: 600;
@@ -7820,6 +7888,7 @@ Version      : 1.0
     }
     
     @media only screen and (max-width: 575.98px) {
+
         body {
             font-size: 0.8125rem;
         }
@@ -7946,6 +8015,14 @@ Version      : 1.0
             -ms-flex: 0 0 100px;
             flex: 0 0 100px;
             width: 100px;
+        }
+        .notification_dd {
+            
+            right: -20px;
+
+            width:fit-content;
+            
+           
         }
         .booking-schedule .time-slot li .timing span {
             display: inline-block;

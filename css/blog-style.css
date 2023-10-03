@@ -68,24 +68,8 @@
       transition: all 0.3s ease-in-out;
   }
   
-  .nav_item a:before {
-      content: '';
-      background: var(--primary);
-      display: block;
-      position: absolute;
-      bottom: -3px;
-      left: 0;
-      width: 0;
-      height: 4px;
-      transition: 0.3s;
-  }
-  
   .nav_item a:hover {
       background-position: 0;
-  }
-  
-  .nav_item a:hover::before {
-      width: 100%;
   }
   
   .navbar {
@@ -859,6 +843,12 @@ mark,
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+.video-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px; 
 }
 
 .img-thumbnail {

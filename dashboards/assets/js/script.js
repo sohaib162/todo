@@ -360,6 +360,29 @@ Version      : 1.0
 })(jQuery);
 
 
+/*=============== SHOW MODAL ===============*/
+const showModal = (openButton, modalContent) =>{
+    const openBtn = document.getElementById(openButton),
+    modalContainer = document.getElementById(modalContent)
+    
+    if(openBtn && modalContainer){
+        openBtn.addEventListener('click', ()=>{
+            modalContainer.classList.add('show-modal')
+        })
+    }
+}
+showModal('open-modal','modal-container')
+
+/*=============== CLOSE MODAL ===============*/
+const closeBtn = document.querySelectorAll('.close-modal')
+
+function closeModal(){
+    const modalContainer = document.getElementById('modal-container')
+    modalContainer.classList.remove('show-modal')
+}
+closeBtn.forEach(c => c.addEventListener('click', closeModal))
+
+
 
 $(document).ready(function() {
     $(".profile .icon_wrap").click(function() {
@@ -433,3 +456,11 @@ form.addEventListener('input', function() {
         conditionalInput.style.display = 'none';
     }
 });
+
+
+
+
+
+
+
+

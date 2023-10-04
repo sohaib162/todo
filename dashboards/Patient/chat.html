@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- doccure/chat.html  30 Nov 2019 04:12:18 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <title>Slim Together</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="../assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../assets/plugins/fontawesome/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+			<script src="assets/js/html5shiv.min.js"></script>
+			<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+
+</head>
+
+<body class="chat-page">
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+
+        <!-- Header -->
+        <!-- /Header -->
+
+        <!-- Page Content -->
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="chat-window">
+
+                            <!-- Chat Left -->
+                            <div class="chat-cont-left">
+                                <div class="chat-header">
+                                    <a href="patient-dashboard.html" class="back-user-list" style="color: aliceblue;">
+                                        <i class="material-icons">chevron_left</i>
+                                    </a>
+                                    <span>Chats</span>
+                                    <a href="javascript:void(0)" class="chat-compose">
+                                        <i class="material-icons">control_point</i>
+                                    </a>
+                                </div>
+                                <form class="chat-search">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <i class="fas fa-search"></i>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Search">
+                                    </div>
+                                </form>
+                                <div class="chat-users-list">
+                                    <div class="chat-scroll">
+
+                                        <a href="javascript:void(0);" class="media read-chat active">
+                                            <div class="media-img-wrap">
+                                                <div class="avatar avatar-online">
+                                                    <img src="../assets/img/doctors/doctor-thumb-02.jpg" alt="User Image" class="avatar-img rounded-circle">
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <div>
+                                                    <div class="user-name">Dr. Chorfi Khaoula</div>
+                                                    <div class="user-last-chat">hello
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="last-chat-time block">8:01 PM</div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Chat Left -->
+
+                            <!-- Chat Right -->
+                            <div class="chat-cont-right">
+                                <div class="chat-header">
+                                    <a id="back_user_list" href="javascript:void(0)" class="back-user-list">
+                                        <i class="material-icons">chevron_left</i>
+                                    </a>
+                                    <div class="media">
+                                        <div class="media-img-wrap">
+                                            <div class="avatar avatar-online">
+                                                <img src="../assets/img/doctors/doctor-thumb-02.jpg" alt="User Image" class="avatar-img rounded-circle">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="user-name">Dr. Chorfi Khaoula</div>
+                                            <div class="user-status">online</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="chat-body">
+                                    <div class="chat-scroll">
+                                        <ul class="list-unstyled">
+                                            <li class="media sent">
+                                                <div class="media-body">
+                                                    <div class="msg-box">
+                                                        <div>
+                                                            <p>مرحبًا، أنا أعاني من بعض المشاكل الصحية وأشعر بأني بحاجة إلى تحسين نظامي الغذائي</p>
+                                                            <ul class="chat-msg-info">
+                                                                <li>
+                                                                    <div class="chat-time">
+                                                                        <span>8:30 AM</span>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="media received">
+                                                <div class="avatar">
+                                                    <img src="../assets/img/doctors/doctor-thumb-02.jpg" alt="User Image" class="avatar-img rounded-circle">
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="msg-box">
+                                                        <div>
+                                                            <p>أفهم تمامًا</p>
+                                                            <p>هل يمكنك أن تخبرني بمزيد من التفاصيل عن مشكلاتك الصحية ونمط حياتك الغذائي الحالي؟</p>
+                                                            <ul class="chat-msg-info">
+                                                                <li>
+                                                                    <div class="chat-time">
+                                                                        <span>8:35 AM</span>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="media sent">
+                                                <div class="media-body">
+                                                    <div class="msg-box">
+                                                        <div>
+                                                            <p>بالتأكيد. أشعر بالتعب الشديد وعدم القدرة على التركيز في العمل. لا أتناول الوجبات الصحية بانتظام وقد أصبح لدي الشهية للمأكولات السريعة.</p>
+                                                            <ul class="chat-msg-info">
+                                                                <li>
+                                                                    <div class="chat-time">
+                                                                        <span>8:42 AM</span>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="msg-box">
+                                                        <div>
+                                                            <p>هل يمكن أن تعطيني بعض النصائح الغذائية للبدء </p>
+                                                            <ul class="chat-msg-info">
+                                                                <li>
+                                                                    <div class="chat-time">
+                                                                        <span>8:42 AM</span>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </li>
+                                            <li class="media received">
+                                                <div class="avatar">
+                                                    <img src="../assets/img/doctors/doctor-thumb-02.jpg" alt="User Image" class="avatar-img rounded-circle">
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="msg-box">
+                                                        <div>
+                                                            <p>بالتأكيد. أولاً، قلل من تناول المأكولات السريعة والوجبات الغنية بالدهون والسكريات. ثانيًا، زد من تناول الماء والألياف للمساعدة في هضم الطعام وتحسين الهضم. وأخيرًا، اسأل عن حجم الوجبات وحاول تناول
+                                                                الوجبات الصغيرة والمتكررة بدلاً من الوجبات الكبيرة والثقيلة.
+
+                                                            </p>
+
+                                                            <ul class="chat-msg-info">
+                                                                <li>
+                                                                    <div class="chat-time">
+                                                                        <span>8:55 PM</span>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="chat-date">Today</li>
+                                            <li class="media received">
+                                                <div class="avatar">
+                                                    <img src="../assets/img/doctors/doctor-thumb-02.jpg" alt="User Image" class="avatar-img rounded-circle">
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="msg-box">
+                                                        <div>
+                                                            <p>هل اتبعت التعليمات التي أعطيتها لك؟</p>
+                                                            <ul class="chat-msg-info">
+                                                                <li>
+                                                                    <div class="chat-time">
+                                                                        <span>10:17 AM</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li><a href="#">Edit</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="media sent">
+                                                <div class="media-body">
+                                                    <div class="msg-box">
+                                                        <div>
+                                                            <p>نعم، لقد اتبعتها بانتباه وانضباط. لقد قمت بتطبيقها بدقة</p>
+                                                            <div class="chat-msg-actions dropdown">
+                                                                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fe fe-elipsis-v"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-right">
+                                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                                </div>
+                                                            </div>
+                                                            <ul class="chat-msg-info">
+                                                                <li>
+                                                                    <div class="chat-time">
+                                                                        <span>10:19 AM</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li><a href="#">Edit</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="media received">
+                                                <div class="avatar">
+                                                    <img src="../assets/img/doctors/doctor-thumb-02.jpg" alt="User Image" class="avatar-img rounded-circle">
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="msg-box">
+                                                        <div>
+                                                            <div class="msg-typing">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="chat-footer">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="btn-file btn">
+                                                <i class="fa fa-paperclip"></i>
+                                                <input type="file">
+                                            </div>
+                                        </div>
+                                        <input type="text" class="input-msg-send form-control" placeholder="Type something">
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn msg-send-btn"><i class="fab fa-telegram-plane"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Chat Right -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- /Row -->
+
+            </div>
+
+        </div>
+        <!-- /Page Content -->
+
+        <!-- Footer -->
+        <!-- /Footer -->
+
+    </div>
+    <!-- /Main Wrapper -->
+
+    <!-- Voice Call Modal -->
+    <div class="modal fade call-modal" id="voice_call">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- Outgoing Call -->
+                    <div class="call-box incoming-box">
+                        <div class="call-wrapper">
+                            <div class="call-inner">
+                                <div class="call-user">
+                                    <img alt="User Image" src="../assets/img/doctors/doctor-thumb-02.jpg" class="call-avatar">
+                                    <h4>Dr...</h4>
+                                    <span>Connecting...</span>
+                                </div>
+                                <div class="call-items">
+                                    <a href="javascript:void(0);" class="btn call-item call-end" data-dismiss="modal" aria-label="Close"><i class="material-icons">call_end</i></a>
+                                    <a href="voice-call.html" class="btn call-item call-start"><i class="material-icons">call</i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Outgoing Call -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Voice Call Modal -->
+
+
+
+    <!-- jQuery -->
+    <script src="../assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+<!-- doccure/chat.html  30 Nov 2019 04:12:18 GMT -->
+
+</html>
